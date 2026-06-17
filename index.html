@@ -189,7 +189,7 @@
                 <i data-lucide="scale" class="w-3.5 h-3.5"></i> Direito Administrativo
             </button>
             <button onclick="switchTab('matematica')" id="btn-matematica" class="tab-btn px-5 py-2.5 rounded-xl font-bold text-xs transition-all flex items-center gap-2 border-2 border-transparent bg-slate-800/50 text-slate-400 hover:text-white">
-                <i data-lucide="function-square" class="w-3.5 h-3.5"></i> Bhaskara
+                <i data-lucide="landmark" class="w-3.5 h-3.5"></i> Educação Financeira
             </button>
             <button onclick="switchTab('estatistica')" id="btn-estatistica" class="tab-btn px-5 py-2.5 rounded-xl font-bold text-xs transition-all flex items-center gap-2 border-2 border-transparent bg-slate-800/50 text-slate-400 hover:text-white">
                 <i data-lucide="bar-chart-3" class="w-3.5 h-3.5"></i> Estatística
@@ -294,75 +294,163 @@
                 </div>
             </div>
 
-            <!-- TAB MATEMÁTICA -->
+            <!-- TAB EDUCAÇÃO FINANCEIRA -->
             <div id="tab-matematica" class="tab-panel">
                 <div class="flex items-center gap-2 mb-6">
-                    <span class="text-[10px] uppercase tracking-widest font-bold text-acc-fuchsia bg-acc-fuchsia/10 border border-acc-fuchsia/20 px-3 py-1 rounded-full">RPG & Storytelling</span>
+                    <span class="text-[10px] uppercase tracking-widest font-bold text-acc-fuchsia bg-acc-fuchsia/10 border border-acc-fuchsia/20 px-3 py-1 rounded-full">Sugestopedia + Simulação Real</span>
                 </div>
-                <h3 class="text-2xl sm:text-3xl font-display font-bold text-white mb-3">A Lenda de Bhaskara</h3>
-                <p class="text-sm text-slate-400 leading-relaxed mb-8 max-w-2xl">Você é um alquimista. A parábola \(ax^2 + bx + c = 0\) é uma árvore mágica com raízes enterradas. Para salvar o reino, você precisa de <strong class="text-white">dois pergaminhos</strong>:</p>
+                <h3 class="text-2xl sm:text-3xl font-display font-bold text-white mb-3">O Jogo do Dinheiro: IPCA, Selic e CDI</h3>
+                <p class="text-sm text-slate-400 leading-relaxed mb-8 max-w-2xl">O sistema financeiro parece complicado, mas é uma guerra de 3 personagens jogando xadrez com o seu dinheiro todo dia. Entender eles é a diferença entre <strong class="text-white">crescer ou perder patrimônio</strong> sem perceber.</p>
 
-                <div class="space-y-5 mb-8">
-                    <div class="flex gap-5 bg-slate-950/60 p-5 rounded-2xl border border-slate-800">
-                        <div class="shrink-0 w-12 h-12 rounded-full border-2 border-acc-amber flex items-center justify-center">
-                            <span class="font-display font-bold text-acc-amber text-xl">Δ</span>
+                <!-- Os 3 personagens -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+                    <div class="bg-slate-950/60 p-5 rounded-2xl border border-slate-800 hover:border-red-500/40 transition-colors group">
+                        <div class="text-3xl mb-3">🔥</div>
+                        <h4 class="font-bold text-red-400 text-base mb-2">IPCA — O Ladrão Invisível</h4>
+                        <p class="text-xs text-slate-400 leading-relaxed mb-3">Ele não aparece, não avisa, mas entra na sua casa todo mês e rouba uma fatia do poder de compra do seu dinheiro. Se o IPCA está em 5% ao ano, R$100 hoje valem apenas R$95 de compra daqui a um ano.</p>
+                        <div class="bg-red-950/30 border border-red-500/20 rounded-xl p-3 text-center">
+                            <div class="text-[10px] text-slate-500 uppercase mb-1">O que é</div>
+                            <div class="text-xs text-red-300 font-semibold">Índice de inflação oficial do Brasil. Medido mensalmente pelo IBGE.</div>
                         </div>
-                        <div class="flex-1">
-                            <h4 class="font-bold text-white mb-1">Pergaminho 1: O Oráculo do Discriminante</h4>
-                            <p class="text-xs text-slate-400 mb-3">Antes de escavar, o oráculo diz se as raízes existem. Prepare a poção:</p>
-                            <div class="text-center text-lg font-mono text-acc-amber bg-black/50 py-2.5 rounded-xl border border-white/5 mb-3">\(\Delta = b^2 - 4ac\)</div>
-                            <div class="grid grid-cols-3 gap-2">
-                                <div class="bg-red-950/40 border border-red-500/20 rounded-xl p-2.5 text-center">
-                                    <div class="text-xs font-bold text-red-400 mb-0.5">Δ &lt; 0</div>
-                                    <div class="text-[10px] text-slate-400">Solo amaldiçoado — sem raízes reais</div>
-                                </div>
-                                <div class="bg-acc-amber/10 border border-acc-amber/20 rounded-xl p-2.5 text-center">
-                                    <div class="text-xs font-bold text-acc-amber mb-0.5">Δ = 0</div>
-                                    <div class="text-[10px] text-slate-400">Uma raiz dupla no centro</div>
-                                </div>
-                                <div class="bg-emerald-950/40 border border-emerald-500/20 rounded-xl p-2.5 text-center">
-                                    <div class="text-xs font-bold text-emerald-400 mb-0.5">Δ &gt; 0</div>
-                                    <div class="text-[10px] text-slate-400">Sucesso! Duas raízes distintas</div>
-                                </div>
+                        <div class="mt-3 bg-black/40 rounded-xl p-2.5 text-center">
+                            <span class="text-[10px] text-slate-500">Mnemônico: </span>
+                            <span class="text-xs font-bold text-red-400">IPCA = "I Pego Compras e Amasso"</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-950/60 p-5 rounded-2xl border border-slate-800 hover:border-acc-amber/40 transition-colors group">
+                        <div class="text-3xl mb-3">🎮</div>
+                        <h4 class="font-bold text-acc-amber text-base mb-2">Selic — O Controle Remoto do Banco Central</h4>
+                        <p class="text-xs text-slate-400 leading-relaxed mb-3">O Banco Central segura esse controle. Aperta "+" e o crédito fica caro — ninguém pega empréstimo, o consumo cai, o Ladrão (IPCA) some. Aperta "−" e o crédito fica barato — economia acelera, mas o Ladrão volta.</p>
+                        <div class="bg-acc-amber/10 border border-acc-amber/20 rounded-xl p-3 text-center">
+                            <div class="text-[10px] text-slate-500 uppercase mb-1">O que é</div>
+                            <div class="text-xs text-acc-amber font-semibold">Taxa básica de juros da economia. Define o custo do dinheiro no Brasil.</div>
+                        </div>
+                        <div class="mt-3 bg-black/40 rounded-xl p-2.5 text-center">
+                            <span class="text-[10px] text-slate-500">Mnemônico: </span>
+                            <span class="text-xs font-bold text-acc-amber">Selic sobe → crédito sufoca</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-950/60 p-5 rounded-2xl border border-slate-800 hover:border-acc-cyan/40 transition-colors group">
+                        <div class="text-3xl mb-3">🌊</div>
+                        <h4 class="font-bold text-acc-cyan text-base mb-2">CDI — A Sombra da Selic</h4>
+                        <p class="text-xs text-slate-400 leading-relaxed mb-3">O CDI é a sombra da Selic — anda quase sempre colado nela (geralmente 0,1% abaixo). É a taxa que os bancos cobram uns dos outros para emprestar dinheiro da noite pro dia. CDB, LCI, LCA rendem "% do CDI".</p>
+                        <div class="bg-acc-cyan/10 border border-acc-cyan/20 rounded-xl p-3 text-center">
+                            <div class="text-[10px] text-slate-500 uppercase mb-1">O que é</div>
+                            <div class="text-xs text-acc-cyan font-semibold">Taxa interbancária. Referência de rendimento para renda fixa.</div>
+                        </div>
+                        <div class="mt-3 bg-black/40 rounded-xl p-2.5 text-center">
+                            <span class="text-[10px] text-slate-500">Mnemônico: </span>
+                            <span class="text-xs font-bold text-acc-cyan">CDI = "Clone Da selic Incompleto"</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Como eles se relacionam -->
+                <div class="mb-8 bg-slate-950/60 border border-slate-800 rounded-2xl p-6">
+                    <h4 class="text-white font-bold mb-5 flex items-center gap-2">
+                        <i data-lucide="git-merge" class="w-4 h-4 text-brand-400"></i> Como eles se relacionam na prática
+                    </h4>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-5">
+                        <div class="bg-emerald-950/30 border border-emerald-500/25 rounded-xl p-4">
+                            <div class="flex items-center gap-2 mb-2">
+                                <i data-lucide="trending-up" class="w-4 h-4 text-emerald-400"></i>
+                                <span class="text-xs font-bold text-emerald-400">Selic SOBE → Cenário de Juros Altos</span>
+                            </div>
+                            <ul class="text-xs text-slate-400 space-y-1.5">
+                                <li>✅ <strong class="text-slate-200">Renda fixa fica atrativa</strong> — seu CDB/Tesouro rende mais</li>
+                                <li>❌ <strong class="text-slate-200">Crédito fica caro</strong> — financiamento, cartão, empréstimo sobem</li>
+                                <li>❌ <strong class="text-slate-200">Bolsa sofre</strong> — empresas pagam mais juros, lucros caem</li>
+                                <li>✅ <strong class="text-slate-200">Inflação tende a cair</strong> — consumo desacelera</li>
+                            </ul>
+                        </div>
+                        <div class="bg-red-950/25 border border-red-500/20 rounded-xl p-4">
+                            <div class="flex items-center gap-2 mb-2">
+                                <i data-lucide="trending-down" class="w-4 h-4 text-red-400"></i>
+                                <span class="text-xs font-bold text-red-400">Selic CAI → Cenário de Juros Baixos</span>
+                            </div>
+                            <ul class="text-xs text-slate-400 space-y-1.5">
+                                <li>❌ <strong class="text-slate-200">Renda fixa rende menos</strong> — hora de buscar outras alternativas</li>
+                                <li>✅ <strong class="text-slate-200">Crédito fica barato</strong> — financiamento e empresas expandem</li>
+                                <li>✅ <strong class="text-slate-200">Bolsa tende a subir</strong> — custo de capital cai, lucros crescem</li>
+                                <li>❌ <strong class="text-slate-200">Inflação pode acelerar</strong> — mais consumo e crédito</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Alerta chave -->
+                    <div class="bg-acc-amber/5 border border-acc-amber/25 rounded-xl p-4 flex gap-3">
+                        <span class="text-xl shrink-0">💡</span>
+                        <div>
+                            <p class="text-xs text-slate-300 leading-relaxed"><strong class="text-acc-amber">A regra de ouro:</strong> Se o IPCA (inflação) estiver acima da Selic, seu dinheiro parado na poupança ou em aplicações ruins está <strong class="text-white">encolhendo em valor real</strong>, mesmo que o número na conta aumente. Rentabilidade real = Rendimento − Inflação.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Outros índices importantes -->
+                <div class="mb-8">
+                    <h4 class="text-white font-bold mb-4 flex items-center gap-2">
+                        <i data-lucide="list" class="w-4 h-4 text-acc-fuchsia"></i> Outros índices que afetam seu bolso
+                    </h4>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        <div class="bg-slate-950/60 border border-slate-800 rounded-xl p-4 flex gap-3">
+                            <span class="text-lg shrink-0">🏠</span>
+                            <div>
+                                <h5 class="text-xs font-bold text-brand-400 mb-1">IGP-M — "Inflação do Aluguel"</h5>
+                                <p class="text-xs text-slate-400 leading-relaxed">Índice usado para reajustar contratos de aluguel. Medido pela FGV. Costuma reagir mais rápido à alta do dólar do que o IPCA.</p>
+                            </div>
+                        </div>
+                        <div class="bg-slate-950/60 border border-slate-800 rounded-xl p-4 flex gap-3">
+                            <span class="text-lg shrink-0">🏦</span>
+                            <div>
+                                <h5 class="text-xs font-bold text-acc-fuchsia mb-1">TR — Taxa Referencial</h5>
+                                <p class="text-xs text-slate-400 leading-relaxed">Usada no rendimento da poupança e no reajuste do FGTS. Hoje está quase zerada — por isso a poupança rende pouco em cenário de Selic alta.</p>
+                            </div>
+                        </div>
+                        <div class="bg-slate-950/60 border border-slate-800 rounded-xl p-4 flex gap-3">
+                            <span class="text-lg shrink-0">💵</span>
+                            <div>
+                                <h5 class="text-xs font-bold text-acc-cyan mb-1">Câmbio (Dólar)</h5>
+                                <p class="text-xs text-slate-400 leading-relaxed">Quando o dólar sobe, tudo importado fica mais caro — combustível, eletrônicos, alimentos. Pressiona o IPCA indiretamente. Selic alta atrai capital estrangeiro e tende a segurar o câmbio.</p>
+                            </div>
+                        </div>
+                        <div class="bg-slate-950/60 border border-slate-800 rounded-xl p-4 flex gap-3">
+                            <span class="text-lg shrink-0">📊</span>
+                            <div>
+                                <h5 class="text-xs font-bold text-acc-amber mb-1">PIB — Produto Interno Bruto</h5>
+                                <p class="text-xs text-slate-400 leading-relaxed">Mede tudo que o país produziu. PIB crescendo com inflação controlada = cenário ideal. Banco Central usa a Selic para equilibrar esse jogo constantemente.</p>
                             </div>
                         </div>
                     </div>
-
-                    <div class="flex gap-5 bg-slate-950/60 p-5 rounded-2xl border border-slate-800">
-                        <div class="shrink-0 w-12 h-12 rounded-full border-2 border-acc-cyan flex items-center justify-center">
-                            <i data-lucide="pickaxe" class="w-5 h-5 text-acc-cyan"></i>
-                        </div>
-                        <div class="flex-1">
-                            <h4 class="font-bold text-white mb-1">Pergaminho 2: A Pá de Extração</h4>
-                            <p class="text-xs text-slate-400 mb-3">Com Δ positivo, escave nos dois sentidos (± = esquerda e direita da parábola):</p>
-                            <div class="text-center text-lg font-mono text-acc-cyan bg-black/50 py-2.5 rounded-xl border border-white/5">\(x = \dfrac{-b \pm \sqrt{\Delta}}{2a}\)</div>
-                        </div>
-                    </div>
                 </div>
 
-                <!-- Calculadora interativa -->
+                <!-- Simulador: vale a pena? -->
                 <div class="bg-slate-950/60 border border-slate-700 rounded-2xl p-6">
-                    <h4 class="text-white font-bold mb-4 flex items-center gap-2">
-                        <i data-lucide="flask-conical" class="w-4 h-4 text-brand-400"></i> Laboratório do Alquimista — Insira seus coeficientes:
+                    <h4 class="text-white font-bold mb-1 flex items-center gap-2">
+                        <i data-lucide="calculator" class="w-4 h-4 text-acc-green"></i> Simulador: Seu dinheiro está crescendo de verdade?
                     </h4>
-                    <div class="grid grid-cols-3 gap-3 mb-5">
+                    <p class="text-xs text-slate-500 mb-5">Calcule sua rentabilidade real descontando a inflação.</p>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-4">
                         <div>
-                            <label class="text-[11px] text-slate-400 font-semibold uppercase mb-1.5 block">a (≠ 0)</label>
-                            <input id="coef-a" type="number" value="1" class="w-full bg-black/50 border border-slate-700 focus:border-acc-cyan rounded-xl px-3 py-2.5 text-sm text-white focus:outline-none transition-colors font-mono">
+                            <label class="text-[11px] text-slate-400 font-semibold uppercase mb-1.5 block">Rendimento bruto (% a.a.)</label>
+                            <input id="fin-rendimento" type="number" step="0.1" value="10.5" class="w-full bg-black/50 border border-slate-700 focus:border-acc-cyan rounded-xl px-3 py-2.5 text-sm text-white focus:outline-none transition-colors font-mono">
+                            <p class="text-[10px] text-slate-600 mt-1">Ex: CDB paga 10,5% a.a.</p>
                         </div>
                         <div>
-                            <label class="text-[11px] text-slate-400 font-semibold uppercase mb-1.5 block">b</label>
-                            <input id="coef-b" type="number" value="-5" class="w-full bg-black/50 border border-slate-700 focus:border-acc-cyan rounded-xl px-3 py-2.5 text-sm text-white focus:outline-none transition-colors font-mono">
+                            <label class="text-[11px] text-slate-400 font-semibold uppercase mb-1.5 block">IPCA estimado (% a.a.)</label>
+                            <input id="fin-ipca" type="number" step="0.1" value="4.5" class="w-full bg-black/50 border border-slate-700 focus:border-acc-cyan rounded-xl px-3 py-2.5 text-sm text-white focus:outline-none transition-colors font-mono">
+                            <p class="text-[10px] text-slate-600 mt-1">Inflação do período</p>
                         </div>
                         <div>
-                            <label class="text-[11px] text-slate-400 font-semibold uppercase mb-1.5 block">c</label>
-                            <input id="coef-c" type="number" value="6" class="w-full bg-black/50 border border-slate-700 focus:border-acc-cyan rounded-xl px-3 py-2.5 text-sm text-white focus:outline-none transition-colors font-mono">
+                            <label class="text-[11px] text-slate-400 font-semibold uppercase mb-1.5 block">Valor investido (R$)</label>
+                            <input id="fin-valor" type="number" step="100" value="5000" class="w-full bg-black/50 border border-slate-700 focus:border-acc-cyan rounded-xl px-3 py-2.5 text-sm text-white focus:outline-none transition-colors font-mono">
                         </div>
                     </div>
-                    <button onclick="calcularBhaskara()" class="w-full bg-gradient-to-r from-acc-fuchsia to-brand-600 text-white font-bold py-2.5 rounded-xl text-sm hover:opacity-90 transition-opacity mb-4">
-                        ⚗️ Calcular Raízes
+                    <button onclick="calcularFinanceiro()" class="w-full bg-gradient-to-r from-acc-green/80 to-acc-cyan text-slate-900 font-bold py-2.5 rounded-xl text-sm hover:opacity-90 transition-opacity mb-4">
+                        💰 Calcular Rentabilidade Real
                     </button>
-                    <div id="bhaskara-result" class="text-sm text-slate-300 font-mono hidden bg-black/60 rounded-xl p-4 border border-slate-700 leading-relaxed"></div>
+                    <div id="fin-result" class="hidden bg-black/60 rounded-xl p-5 border border-slate-700 space-y-3"></div>
                 </div>
             </div>
 
